@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Tabuada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="conteudo">
+    <h1>TABUADA</h1>
+    <p>Digite um número e veja a sua tabuada.</p>
+    Digite o número: <input type="text" id="numeroDigitado">
+    <input type="button" value="Ver Tabuada" id="verTabuada" onclick="tabuada()">
+    <div id="res"></div>
+    </div>
+    <footer>
+        <p>&copy;Gabriel Torres - 2023</p>
+    </footer>
+    <script>
+        function tabuada(){
+         var numero = window.document.getElementById('numeroDigitado')
+         var tabuada =  window.document.getElementById('verTabuada')
+         var resposta = window.document.getElementById('res')
+         window.document.getElementById('res')
+         numeroCaixa = Number(numeroDigitado.value)
+         var mult0 = 0 * numeroCaixa
+         var mult1 = 1 * numeroCaixa
+         var mult2 = 2 * numeroCaixa
+         var mult3 = 3 * numeroCaixa
+         var mult4 = 4 * numeroCaixa
+         var mult5 = 5 * numeroCaixa
+         var mult6 = 6 * numeroCaixa
+         var mult7 = 7 * numeroCaixa
+         var mult8 = 8 * numeroCaixa
+         var mult9 = 9 * numeroCaixa
+         var mult10 = 10 * numeroCaixa
+
+         res.innerHTML = `<p>Tabuada do número: ${numeroCaixa}`
+         res.innerHTML += `<p>${numeroCaixa} x 0 = ${mult0}`
+         res.innerHTML += `<p>${numeroCaixa} x 1 = ${mult1}`
+         res.innerHTML += `<p>${numeroCaixa} x 2 = ${mult2}`
+         res.innerHTML += `<p>${numeroCaixa} x 3 = ${mult3}`   
+         res.innerHTML += `<p>${numeroCaixa} x 4 = ${mult4}`
+         res.innerHTML += `<p>${numeroCaixa} x 5 = ${mult5}`
+         res.innerHTML += `<p>${numeroCaixa} x 6 = ${mult6}`
+         res.innerHTML += `<p>${numeroCaixa} x 7 = ${mult7}`
+         res.innerHTML += `<p>${numeroCaixa} x 8 = ${mult8}`
+         res.innerHTML += `<p>${numeroCaixa} x 9 = ${mult9}`
+         res.innerHTML += `<p>${numeroCaixa} x 10 = ${mult10}`
+         }
+    </script>
+</body>
+</html>
